@@ -10,4 +10,9 @@
     <string name="menu_home">FEEL</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="how_feel_text">Kuidas sa ennast tunned?</string>
+    <string name="start_button">Alusta</string>
+    <string name="FeelingValueNeutral">Neutraalselt</string>
+    <string name="FeelingValueGood">Hästi</string>
+    <string name="FeelingValueBad">Halvasti</string>
 </resources>
