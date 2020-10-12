@@ -35,6 +35,10 @@
             android:name=".FeelTriggerActivity"
             android:label="What triggered you">
         </activity>
+        <activity
+            android:name=".FeelEmotionActivity"
+            android:label="Emotion">
+        </activity>
     </application>
 
 </manifest>
