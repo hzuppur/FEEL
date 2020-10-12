@@ -31,6 +31,10 @@
             android:name=".FeelBodyActivity"
             android:label="Where in body">
         </activity>
+        <activity
+            android:name=".FeelTriggerActivity"
+            android:label="What triggered you">
+        </activity>
     </application>
 
 </manifest>

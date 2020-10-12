@@ -6,32 +6,38 @@
     android:layout_height="match_parent"
     android:background="@drawable/main_background">
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/where_you_feel"
+        android:gravity="center_horizontal"
+        android:text="@string/what_triggered"
+        android:textAlignment="center"
         android:textColor="#ffffff"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.098"/>
+        app:layout_constraintVertical_bias="0.199" />
 
-    <ImageView
-        android:id="@+id/body"
-        android:layout_width="340dp"
-        android:layout_height="340dp"
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="273dp"
+        android:layout_height="258dp"
+        android:autofillHints="Mis vallandas tunde?"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:textColor="#f0f0f0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.498"
-        app:srcCompat="@drawable/ic_human"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="LabelFor" />
 
     <Button
         android:id="@+id/NextButton"
@@ -45,5 +51,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.959" />
+        app:layout_constraintVertical_bias="0.951" />
 </androidx.constraintlayout.widget.ConstraintLayout>
