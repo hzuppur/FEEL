@@ -20,4 +20,5 @@
     <string name="IntensityWeak">Nõrk</string>
     <string name="IntensityStrong">Tugev</string>
     <string name="IntensityVeryStrong">Väga tugev</string>
+    <string name="where_you_feel">Kus sa seda tunned?</string>
 </resources>

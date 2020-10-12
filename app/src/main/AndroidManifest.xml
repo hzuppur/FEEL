@@ -27,6 +27,10 @@
             android:name=".FeelIntensityActivity"
             android:label="Feeling intensity">
         </activity>
+        <activity
+            android:name=".FeelBodyActivity"
+            android:label="Where in body">
+        </activity>
     </application>
 
 </manifest>

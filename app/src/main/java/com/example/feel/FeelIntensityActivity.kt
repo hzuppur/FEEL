@@ -1,6 +1,8 @@
 package com.example.feel
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +15,12 @@ class FeelIntensityActivity : AppCompatActivity() {
 
         val seekText = findViewById<TextView>(R.id.IntensityValue)
         val seekProgress = findViewById<TextView>(R.id.SeekBarProgress)
+
+        val nextButton = findViewById<Button>(R.id.NextButton)
+        nextButton.setOnClickListener {
+            val intent = Intent(this, FeelBodyActivity::class.java)
+            startActivity(intent)
+        }
 
         val seek = findViewById<SeekBar>(R.id.seekBar)
         seek?.setOnSeekBarChangeListener(object :
