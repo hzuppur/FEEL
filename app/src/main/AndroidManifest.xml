@@ -39,6 +39,10 @@
             android:name=".FeelEmotionActivity"
             android:label="Emotion">
         </activity>
+        <activity
+            android:name=".FeelWhenActivity"
+            android:label="When">
+        </activity>
     </application>
 
 </manifest>
