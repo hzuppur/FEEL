@@ -1,36 +1,28 @@
 package com.example.feel
 
-import android.app.PendingIntent.getActivity
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
-class FeelPositivityActivity : AppCompatActivity() {
+class FeelIntensityActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.feeling_positivity)
+        setContentView(R.layout.feeling_intensity)
 
-        val seekText = findViewById<TextView>(R.id.FeelingValue)
+        val seekText = findViewById<TextView>(R.id.IntensityValue)
         val seekProgress = findViewById<TextView>(R.id.SeekBarProgress)
-        val nextButton = findViewById<Button>(R.id.NextButton)
-        nextButton.setOnClickListener {
-            val intent = Intent(this, FeelIntensityActivity::class.java)
-            startActivity(intent)
-        }
 
         val seek = findViewById<SeekBar>(R.id.seekBar)
         seek?.setOnSeekBarChangeListener(object :
             SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean) {
                 when {
-                    progress < 30 -> seekText.text = getString(R.string.FeelingValueBad)
-                    progress < 70 -> seekText.text = getString(R.string.FeelingValueNeutral)
-                    else -> seekText.text = getString(R.string.FeelingValueGood)
+                    progress < 20 -> seekText.text = getString(R.string.IntensityVeryWeak)
+                    progress < 40 -> seekText.text = getString(R.string.IntensityWeak)
+                    progress < 75 -> seekText.text = getString(R.string.IntensityStrong)
+                    else -> seekText.text = getString(R.string.IntensityVeryStrong)
 
                 }
 

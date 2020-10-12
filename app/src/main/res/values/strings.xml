@@ -15,4 +15,9 @@
     <string name="FeelingValueNeutral">Neutraalselt</string>
     <string name="FeelingValueGood">Hästi</string>
     <string name="FeelingValueBad">Halvasti</string>
+    <string name="how_intensity_text">Kui intensiivne on see tunne?</string>
+    <string name="IntensityVeryWeak">Väga nõrk</string>
+    <string name="IntensityWeak">Nõrk</string>
+    <string name="IntensityStrong">Tugev</string>
+    <string name="IntensityVeryStrong">Väga tugev</string>
 </resources>

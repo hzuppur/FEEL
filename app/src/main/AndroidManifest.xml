@@ -19,6 +19,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".FeelPositivityActivity"
+            android:label="Feeling positivity">
+        </activity>
+        <activity
+            android:name=".FeelIntensityActivity"
+            android:label="Feeling intensity">
+        </activity>
     </application>
 
 </manifest>
