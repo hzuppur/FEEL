@@ -43,6 +43,10 @@
             android:name=".FeelWhenActivity"
             android:label="When">
         </activity>
+        <activity
+            android:name=".FeelReactedActivity"
+            android:label="How you reacted">
+        </activity>
     </application>
 
 </manifest>
