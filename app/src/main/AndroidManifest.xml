@@ -47,6 +47,10 @@
             android:name=".FeelReactedActivity"
             android:label="How you reacted">
         </activity>
+        <activity
+            android:name=".FeelUnderstandOrBetter"
+            android:label="Understand feeling or feel better">
+        </activity>
     </application>
 
 </manifest>

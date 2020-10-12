@@ -2,6 +2,7 @@ package com.example.feel
 
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
+import android.content.Intent
 
 import android.os.Bundle
 import android.widget.Button
@@ -16,6 +17,12 @@ class FeelWhenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.feeling_when)
+
+        val nextButton = findViewById<Button>(R.id.NextButton)
+        nextButton.setOnClickListener {
+            val intent = Intent(this, FeelUnderstandOrBetter::class.java)
+            startActivity(intent)
+        }
 
         val mPickTimeBtn = findViewById<Button>(R.id.pickDateBtn)
         val mPickTimeToday = findViewById<Button>(R.id.buttonToday)
