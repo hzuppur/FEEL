@@ -1,6 +1,6 @@
 # FEEL
 FEEL – a web‐tool/app for creating inner safe space to feel. 
-[![Actions Status](https://github.com/hzuppur/FEEL/workflows/android/badge.svg)](https://github.com/hzuppur/FEEL/actions)
+[![Actions Status](https://github.com/hzuppur/FEEL/workflows/android.yml/badge.svg)](https://github.com/hzuppur/FEEL/actions)
 
 ### Why and for whom? 
 This app/program introduces some basic self‐help techniques to increase emotional awareness and 
