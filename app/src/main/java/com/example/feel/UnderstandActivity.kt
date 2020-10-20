@@ -2,6 +2,7 @@ package com.example.feel
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.text.LineBreaker
 import android.os.Build
 import android.os.Bundle
 import android.text.Layout.JUSTIFICATION_MODE_INTER_WORD
@@ -24,12 +25,6 @@ class UnderstandActivity : AppCompatActivity() {
         nextButton.setOnClickListener {
             val intent = Intent(this, FeelUnderstandOrBetter::class.java)
             startActivity(intent)
-        }
-
-        val textView = findViewById<TextView>(R.id.understandText)
-
-        if (Build.VERSION.SDK_INT >= 26) {
-            textView.justificationMode = JUSTIFICATION_MODE_INTER_WORD
         }
     }
 }
