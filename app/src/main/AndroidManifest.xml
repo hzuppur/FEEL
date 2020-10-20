@@ -20,43 +20,37 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.addFeeling.FeelPositivityActivity"
-            android:label="Feeling positivity">
+            android:name=".ui.addFeeling.FeelPositivityActivity">
         </activity>
         <activity
-            android:name=".ui.addFeeling.FeelIntensityActivity"
-            android:label="Feeling intensity">
+            android:name=".ui.addFeeling.FeelIntensityActivity">
         </activity>
         <activity
-            android:name=".ui.addFeeling.FeelBodyActivity"
-            android:label="Where in body">
+            android:name=".ui.addFeeling.FeelBodyActivity">
         </activity>
         <activity
-            android:name=".ui.addFeeling.FeelTriggerActivity"
-            android:label="What triggered you">
+            android:name=".ui.addFeeling.FeelTriggerActivity">
         </activity>
         <activity
-            android:name=".ui.addFeeling.FeelEmotionActivity"
-            android:label="Emotion">
+            android:name=".ui.addFeeling.FeelEmotionActivity">
         </activity>
         <activity
-            android:name=".ui.addFeeling.FeelWhenActivity"
-            android:label="When">
+            android:name=".ui.addFeeling.FeelWhenActivity">
         </activity>
         <activity
-            android:name=".ui.addFeeling.FeelReactedActivity"
-            android:label="How you reacted">
+            android:name=".ui.addFeeling.FeelReactedActivity">
         </activity>
         <activity
-            android:name=".ui.addFeeling.FeelUnderstandOrBetter"
-            android:label="Understand feeling or feel better">
+            android:name=".ui.addFeeling.FeelUnderstandOrBetter">
         </activity>
         <activity
-            android:name=".FeelBetterActivity"
-            android:label="Feel better">
+            android:name=".FeelBetterActivity">
         </activity>
         <activity
             android:name=".ui.exercises.Exercise1">
+        </activity>
+        <activity
+            android:name=".UnderstandActivity">
         </activity>
     </application>
 

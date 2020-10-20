@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.feel.FeelBetterActivity
 import com.example.feel.MainActivity
 import com.example.feel.R
+import com.example.feel.UnderstandActivity
 
 
 class FeelUnderstandOrBetter : AppCompatActivity() {
@@ -16,6 +17,7 @@ class FeelUnderstandOrBetter : AppCompatActivity() {
 
         val nextButton = findViewById<Button>(R.id.NextButton)
         val betterButton = findViewById<Button>(R.id.feelBetterButton)
+        val understandButton = findViewById<Button>(R.id.understandButton)
 
 
         nextButton.setOnClickListener {
@@ -25,6 +27,11 @@ class FeelUnderstandOrBetter : AppCompatActivity() {
 
         betterButton.setOnClickListener {
             val intent = Intent(this, FeelBetterActivity::class.java)
+            startActivity(intent)
+        }
+
+        understandButton.setOnClickListener {
+            val intent = Intent(this, UnderstandActivity::class.java)
             startActivity(intent)
         }
     }
