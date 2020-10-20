@@ -28,7 +28,7 @@ class UnderstandActivity : AppCompatActivity() {
 
         val textView = findViewById<TextView>(R.id.understandText)
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        if (Build.VERSION.SDK_INT >= 26) {
             textView.justificationMode = JUSTIFICATION_MODE_INTER_WORD
         }
     }
