@@ -1,4 +1,4 @@
-package com.example.feel
+package com.example.feel.ui.addFeeling
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.feel.R
 
 
 class FeelIntensityActivity : AppCompatActivity() {

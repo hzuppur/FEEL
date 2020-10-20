@@ -26,4 +26,6 @@
     <string name="what_emotion">Mida sa tundsid?</string>
     <string name="when_you_felt">Millal sa seda tunnet tundsid?</string>
     <string name="how_reacted">Kuidas sa reageerisid sellele tundele</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

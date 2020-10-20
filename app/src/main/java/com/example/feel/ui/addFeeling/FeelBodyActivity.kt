@@ -1,22 +1,20 @@
-package com.example.feel
+package com.example.feel.ui.addFeeling
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.feel.R
 
 
-class FeelTriggerActivity : AppCompatActivity() {
+class FeelBodyActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.feeling_trigger)
+        setContentView(R.layout.feeling_body)
 
         val nextButton = findViewById<Button>(R.id.NextButton)
         nextButton.setOnClickListener {
-            val intent = Intent(this, FeelEmotionActivity::class.java)
+            val intent = Intent(this, FeelTriggerActivity::class.java)
             startActivity(intent)
         }
     }

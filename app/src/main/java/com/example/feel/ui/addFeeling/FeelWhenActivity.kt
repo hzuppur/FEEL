@@ -1,4 +1,4 @@
-package com.example.feel
+package com.example.feel.ui.addFeeling
 
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.feel.R
 import java.text.SimpleDateFormat
 import java.util.*
 

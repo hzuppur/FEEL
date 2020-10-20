@@ -20,36 +20,43 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FeelPositivityActivity"
+            android:name=".ui.addFeeling.FeelPositivityActivity"
             android:label="Feeling positivity">
         </activity>
         <activity
-            android:name=".FeelIntensityActivity"
+            android:name=".ui.addFeeling.FeelIntensityActivity"
             android:label="Feeling intensity">
         </activity>
         <activity
-            android:name=".FeelBodyActivity"
+            android:name=".ui.addFeeling.FeelBodyActivity"
             android:label="Where in body">
         </activity>
         <activity
-            android:name=".FeelTriggerActivity"
+            android:name=".ui.addFeeling.FeelTriggerActivity"
             android:label="What triggered you">
         </activity>
         <activity
-            android:name=".FeelEmotionActivity"
+            android:name=".ui.addFeeling.FeelEmotionActivity"
             android:label="Emotion">
         </activity>
         <activity
-            android:name=".FeelWhenActivity"
+            android:name=".ui.addFeeling.FeelWhenActivity"
             android:label="When">
         </activity>
         <activity
-            android:name=".FeelReactedActivity"
+            android:name=".ui.addFeeling.FeelReactedActivity"
             android:label="How you reacted">
         </activity>
         <activity
-            android:name=".FeelUnderstandOrBetter"
+            android:name=".ui.addFeeling.FeelUnderstandOrBetter"
             android:label="Understand feeling or feel better">
+        </activity>
+        <activity
+            android:name=".FeelBetterActivity"
+            android:label="Feel better">
+        </activity>
+        <activity
+            android:name=".ui.exercises.Exercise1">
         </activity>
     </application>
 
