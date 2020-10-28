@@ -58,8 +58,6 @@ class FeelBodyActivity : AppCompatActivity() {
         val img = findViewById<ImageView>(R.id.body)
 
         val imgDrawable = img.drawable
-        //imgDrawable will not be null if you had set src to ImageView, in case of background drawable it will be null
-        //imgDrawable will not be null if you had set src to ImageView, in case of background drawable it will be null
         val bitmap = imgDrawable.toBitmap()
 
         val inverse = Matrix()
