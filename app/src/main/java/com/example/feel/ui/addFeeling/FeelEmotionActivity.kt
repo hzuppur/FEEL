@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.feel.R
 import kotlinx.android.synthetic.main.feeling_emotion.*
+import kotlin.math.floor
 
 
 class FeelEmotionActivity : AppCompatActivity(), RotaryKnobView.RotaryKnobListener {
@@ -23,37 +24,32 @@ class FeelEmotionActivity : AppCompatActivity(), RotaryKnobView.RotaryKnobListen
             val intent = Intent(this, FeelReactedActivity::class.java)
             startActivity(intent)
         }
-
-        findViewById<TextView>(R.id.FeelingText).text = knob.value.toString()
-
     }
 
     override fun onRotate(value: Int) {
         val feelingText = findViewById<TextView>(R.id.FeelingText)
 
-        val step = 360/6
+        val feelings = arrayListOf(
+            "Hirm",
+            "Vastikus",
+            "Rõõm",
+            "Kurbus",
+            "Üllatus",
+            "Neutraalsus",
+            "Ärevus",
+            "Armastus",
+            "Depresioon",
+            "Põlgus",
+            "Häbi",
+            "Kadedus",
+            "Uhkus",
+            "Viha"
+        )
 
-        when {
-            value < step -> {
-                feelingText.text = "Kurb"
-            }
-            value < step *2 -> {
-                feelingText.text = "Vihane"
-            }
-            value < step * 3 -> {
-                feelingText.text = "Kuri"
-            }
-            value < step * 4 -> {
-                feelingText.text = "Rõõmus"
-            }
-            value < step * 5 -> {
-                feelingText.text = "Masendunud"
-            }
-            true -> {
-                feelingText.text = "Ükskõikne"
-            }
-        }
+        val index = ((value) / (360.0) * 13.9).toInt()
 
-        //feelingText.text = value.toString()
+        feelingText.text = feelings[index]
     }
+
+    //feelingText.text = value.toString()
 }

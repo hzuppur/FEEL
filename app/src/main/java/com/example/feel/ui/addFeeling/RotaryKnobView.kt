@@ -12,6 +12,7 @@ import android.widget.RelativeLayout
 import androidx.core.view.GestureDetectorCompat
 import com.example.feel.R
 import kotlinx.android.synthetic.main.rotary_knob_view.view.*
+import kotlin.math.abs
 import kotlin.math.atan2
 
 // Code is from https://www.freecodecamp.org/news/how-to-create-an-android-rotary-knob-using-kotlin/
@@ -20,10 +21,10 @@ class RotaryKnobView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : RelativeLayout(context, attrs, defStyleAttr), GestureDetector.OnGestureListener {
     private val gestureDetector: GestureDetectorCompat
-    private var maxValue = 99
+    private var maxValue = 360
     private var minValue = 0
     var listener: RotaryKnobListener? = null
-    var value = 130
+    var value = 0
     private var knobDrawable: Drawable? = null
     private var divider = 360f / (maxValue - minValue)
     private var lastPos = 0f;
@@ -64,7 +65,12 @@ class RotaryKnobView @JvmOverloads constructor(
      * We calculate the polar angle (Theta) from these coordinates and use these to animate the
      * knob movement and calculate the value
      */
-    override fun onScroll(e1: MotionEvent, e2: MotionEvent, distanceX: Float, distanceY: Float): Boolean {
+    override fun onScroll(
+        e1: MotionEvent,
+        e2: MotionEvent,
+        distanceX: Float,
+        distanceY: Float
+    ): Boolean {
         val rotationDegrees = calculateAngle(e2.x, e2.y)
         val userRotatedDegrees = rotationDegrees - lastPos
         val knobPos = lastKnobPos + userRotatedDegrees
@@ -72,7 +78,13 @@ class RotaryKnobView @JvmOverloads constructor(
         setKnobPosition(knobPos)
 
         // Calculate rotary value
-        value = rotationDegrees.toInt() + userRotatedDegrees.toInt()
+        if (knobPos < 0){
+            value = abs(knobPos.toInt())
+        }else {
+            value = 360 - knobPos.toInt()
+        }
+
+
         if (listener != null) listener!!.onRotate(value)
         lastPos += userRotatedDegrees
         lastKnobPos = knobPos

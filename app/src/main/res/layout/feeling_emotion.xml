@@ -27,7 +27,7 @@
         android:layout_width="@dimen/knob_width"
         android:layout_height="@dimen/knob_height"
         app:initialValue="0"
-        app:knobDrawable="@drawable/ic_emotionwheel"
+        app:knobDrawable="@drawable/ic_emotionwheelwithtext"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -35,7 +35,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.673"
         app:maxValue="360"
-        app:minValue="0" />
+        app:minValue="0" >
+    </com.example.feel.ui.addFeeling.RotaryKnobView>
 
     <Button
         android:id="@+id/NextButton"
@@ -55,6 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
+        android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/knob"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

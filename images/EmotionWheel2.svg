@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="EmotionWheel2.svg">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect821"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-215.58565"
+     inkscape:cy="272.06571"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:window-width="1458"
+     inkscape:window-height="841"
+     inkscape:window-x="70"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-97)">
+    <ellipse
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.02877307;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+       id="path815"
+       cx="100"
+       cy="197"
+       rx="98.985619"
+       ry="98.985611" />
+    <path
+       id="use4700"
+       transform="matrix(0.90097027,-0.43388082,0.3362237,0.6981815,-50.85898,134.21839)"
+       style="fill:none;stroke:#000000;stroke-width:1.13028681;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:path-effect="#path-effect821"
+       inkscape:original-d="m 109.5805,158.01984 c 2.7e-4,-42.5852 2.7e-4,-85.170149 0,-127.754828 M 109.58031,158.0199 C 95.262296,119.65181 80.944122,81.284102 66.625797,42.916787 M 109.58015,158.02006 C 83.779717,131.46837 57.979264,104.9171 32.178806,78.366278 M 109.58007,158.02028 C 77.407309,148.54388 45.234678,139.06787 13.06219,129.59225 m 96.51788,28.42829 c -32.17287,9.4758 -64.345489,18.95189 -96.517843,28.42825 M 109.58016,158.02076 C 83.77942,184.57197 57.979002,211.12329 32.178917,237.67472 M 109.58031,158.02093 C 95.261863,196.38874 80.943742,234.75648 66.625955,273.12413 M 109.5805,158.02098 c -2.1e-4,42.5852 -1.5e-4,85.17014 1.8e-4,127.75482 m 1e-5,-127.75488 c 14.31806,38.36805 28.63629,76.73573 42.95467,115.10301 M 109.58085,158.02076 c 25.80047,26.55164 51.60096,53.10284 77.40145,79.65361 m -77.40137,-79.65383 c 32.17277,9.47633 64.34542,18.95227 96.51792,28.42781 m -96.51792,-28.42806 c 32.17286,-9.47588 64.34547,-18.95203 96.51781,-28.42847 m -96.51789,28.42823 c 25.8007,-26.55126 51.60108,-53.10264 77.40113,-79.654125 M 109.58069,158.0199 c 14.3184,-38.36785 28.63647,-76.735623 42.9542,-115.103304"
+       d="m 109.5805,158.01984 c 0,-42.5852 0,-85.170149 0,-127.754828 M 109.58031,158.0199 C 95.262032,119.65191 80.943859,81.2842 66.625797,42.916787 M 109.58015,158.02006 C 83.779495,131.46859 57.97904,104.91732 32.178806,78.366278 M 109.58007,158.02028 C 77.407214,148.5442 45.234583,139.06819 13.06219,129.59225 m 96.51788,28.42829 c -32.172773,9.47613 -64.345393,18.95222 -96.517843,28.42825 M 109.58016,158.02076 C 83.779642,184.57219 57.979226,211.12351 32.178917,237.67472 M 109.58031,158.02093 C 95.262126,196.38884 80.944006,234.75658 66.625955,273.12413 M 109.5805,158.02098 c 6e-5,42.5852 1.2e-4,85.17014 1.8e-4,127.75482 m 1e-5,-127.75488 c 14.31833,38.36795 28.63656,76.73563 42.95467,115.10301 M 109.58085,158.02076 c 25.8007,26.55142 51.60118,53.10263 77.40145,79.65361 m -77.40137,-79.65383 c 32.17287,9.476 64.34552,18.95194 96.51792,28.42781 m -96.51792,-28.42806 c 32.17276,-9.4762 64.34537,-18.95236 96.51781,-28.42847 m -96.51789,28.42823 c 25.80048,-26.55148 51.60086,-53.10286 77.40113,-79.654125 M 109.58069,158.0199 c 14.31813,-38.36795 28.6362,-76.735723 42.9542,-115.103304" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4732"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.08630209,0.25011256,-0.25011256,0.08630209,63.206195,139.31574)"><flowRegion
+         id="flowRegion4734"><rect
+           id="rect4736"
+           width="444.28571"
+           height="71.428574"
+           x="-94.285713"
+           y="-122.66591" /></flowRegion><flowPara
+         id="flowPara4738">Viha</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4740"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(-0.08052948,0.25203043,-0.25203043,-0.08052948,170.95673,8.1977609)"><flowRegion
+         id="flowRegion4742"><rect
+           id="rect4744"
+           width="108.57142"
+           height="51.42857"
+           x="417.14285"
+           y="37.334087" /></flowRegion><flowPara
+         id="flowPara4746">Hirm</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4768"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(-0.17938996,0.19448285,-0.19448285,-0.17938996,47.755405,60.236444)"><flowRegion
+         id="flowRegion4770"><rect
+           id="rect4772"
+           width="185.71428"
+           height="77.14286"
+           x="-111.42857"
+           y="-506.95163" /></flowRegion><flowPara
+         id="flowPara4774">Vastikus</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4776"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(-0.22984826,0.13105004,-0.13105004,-0.22984826,103.30003,78.637536)"><flowRegion
+         id="flowRegion4778"><rect
+           id="rect4780"
+           width="180"
+           height="111.42857"
+           x="-108.57143"
+           y="-432.66592" /></flowRegion><flowPara
+         id="flowPara4782">Rõõm</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4784"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(-0.26453889,-0.00484922,0.00484922,-0.26453889,172.9463,110.03774)"><flowRegion
+         id="flowRegion4786"><rect
+           id="rect4788"
+           width="180"
+           height="91.428574"
+           x="-77.14286"
+           y="-355.52304" /></flowRegion><flowPara
+         id="flowPara4790">Kurbus</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4792"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(-0.23673528,-0.1181556,0.1181556,-0.23673528,187.97152,170.42073)"><flowRegion
+         id="flowRegion4794"><rect
+           id="rect4796"
+           width="225.71428"
+           height="80"
+           x="-97.14286"
+           y="-255.52306" /></flowRegion><flowPara
+         id="flowPara4798">Üllatus</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4800"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(-0.18744155,-0.18673512,0.18673512,-0.18744155,178.38383,223.61146)"><flowRegion
+         id="flowRegion4802"><rect
+           id="rect4804"
+           width="314.28571"
+           height="60"
+           x="-77.14286"
+           y="-175.52306" /></flowRegion><flowPara
+         id="flowPara4806">Neutraalsus</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4808"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(-0.11124574,-0.24005983,0.24005983,-0.11124574,269.07968,286.3869)"><flowRegion
+         id="flowRegion4810"><rect
+           id="rect4812"
+           width="268.57144"
+           height="62.857143"
+           x="228.57143"
+           y="-518.38019" /></flowRegion><flowPara
+         id="flowPara4814">Ärevus</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4816"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.05517211,-0.25876703,0.25876703,0.05517211,178.42871,376.00737)"><flowRegion
+         id="flowRegion4818"><rect
+           id="rect4820"
+           width="191.42857"
+           height="62.857143"
+           x="257.14285"
+           y="-446.95163" /></flowRegion><flowPara
+         id="flowPara4822">Armastus</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4824"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.15414542,-0.21504308,0.21504308,0.15414542,68.280166,380.06868)"><flowRegion
+         id="flowRegion4826"><rect
+           id="rect4828"
+           width="265.71429"
+           height="80"
+           x="285.71429"
+           y="-338.38019" /></flowRegion><flowPara
+         id="flowPara4832">Depresioon</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4836"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.23311888,-0.12513963,0.12513963,0.23311888,-28.074447,323.53646)"><flowRegion
+         id="flowRegion4838"><rect
+           id="rect4840"
+           width="271.42856"
+           height="91.428574"
+           x="302.85715"
+           y="-224.09448" /></flowRegion><flowPara
+         id="flowPara4842">Põlgus</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4844"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26455802,-0.00365958,0.00365958,0.26455802,-169.06885,370.79038)"><flowRegion
+         id="flowRegion4846"><rect
+           id="rect4848"
+           width="222.85715"
+           height="134.28572"
+           x="674.28571"
+           y="-664.09448" /></flowRegion><flowPara
+         id="flowPara4850">Häbi</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4852"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.24274972,0.10524689,-0.10524689,0.24274972,-199.90431,198.64022)"><flowRegion
+         id="flowRegion4854"><rect
+           id="rect4856"
+           width="202.85715"
+           height="88.571426"
+           x="694.28571"
+           y="-486.95163" /></flowRegion><flowPara
+         id="flowPara4858">Kadedus</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4860"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.18222939,0.19182489,-0.19182489,0.18222939,80.649099,320.1354)"><flowRegion
+         id="flowRegion4862"><rect
+           id="rect4864"
+           width="171.42857"
+           height="120"
+           x="-642.85712"
+           y="-429.80878" /></flowRegion><flowPara
+         id="flowPara4866">Uhkus</flowPara></flowRoot>  </g>
+</svg>
