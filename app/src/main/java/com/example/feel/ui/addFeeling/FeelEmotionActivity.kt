@@ -50,6 +50,4 @@ class FeelEmotionActivity : AppCompatActivity(), RotaryKnobView.RotaryKnobListen
 
         feelingText.text = feelings[index]
     }
-
-    //feelingText.text = value.toString()
 }
