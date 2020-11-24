@@ -1,14 +1,13 @@
 package com.example.feel
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.feel.ui.addFeeling.FeelTriggerActivity
 import com.example.feel.ui.addFeeling.FeelUnderstandOrBetter
+import com.example.feel.ui.exercises.Exercise
+import com.example.feel.ui.exercises.ExerciseAdapter
 import kotlinx.android.synthetic.main.feel_better.*
 
 

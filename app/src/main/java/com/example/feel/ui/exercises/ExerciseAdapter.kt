@@ -1,14 +1,11 @@
-package com.example.feel
+package com.example.feel.ui.exercises
 
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.example.feel.ui.addFeeling.FeelPositivityActivity
-import com.example.feel.ui.addFeeling.FeelTriggerActivity
-import com.example.feel.ui.exercises.Exercise1
+import com.example.feel.R
 import kotlinx.android.synthetic.main.fragment_exercise.view.*
 
 

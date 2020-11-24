@@ -10,48 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.addFeeling.FeelPositivityActivity">
-        </activity>
-        <activity
-            android:name=".ui.addFeeling.FeelIntensityActivity">
-        </activity>
-        <activity
-            android:name=".ui.addFeeling.FeelBodyActivity">
-        </activity>
-        <activity
-            android:name=".ui.addFeeling.FeelTriggerActivity">
-        </activity>
-        <activity
-            android:name=".ui.addFeeling.FeelEmotionActivity">
-        </activity>
-        <activity
-            android:name=".ui.addFeeling.FeelWhenActivity">
-        </activity>
-        <activity
-            android:name=".ui.addFeeling.FeelReactedActivity">
-        </activity>
-        <activity
-            android:name=".ui.addFeeling.FeelUnderstandOrBetter">
-        </activity>
-        <activity
-            android:name=".FeelBetterActivity">
-        </activity>
-        <activity
-            android:name=".ui.exercises.Exercise1">
-        </activity>
-        <activity
-            android:name=".UnderstandActivity">
-        </activity>
+        <activity android:name=".ui.addFeeling.FeelPositivityActivity" />
+        <activity android:name=".ui.addFeeling.FeelIntensityActivity" />
+        <activity android:name=".ui.addFeeling.FeelBodyActivity" />
+        <activity android:name=".ui.addFeeling.FeelTriggerActivity" />
+        <activity android:name=".ui.addFeeling.FeelEmotionActivity" />
+        <activity android:name=".ui.addFeeling.FeelWhenActivity" />
+        <activity android:name=".ui.addFeeling.FeelReactedActivity" />
+        <activity android:name=".ui.addFeeling.FeelUnderstandOrBetter" />
+        <activity android:name=".FeelBetterActivity" />
+        <activity android:name=".ui.exercises.Exercise1" />
+        <activity android:name=".UnderstandActivity" />
     </application>
 
 </manifest>
