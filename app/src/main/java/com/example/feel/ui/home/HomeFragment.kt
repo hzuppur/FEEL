@@ -1,20 +1,19 @@
 package com.example.feel.ui.home
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.example.feel.ui.addFeeling.FeelPositivityActivity
+import androidx.navigation.fragment.findNavController
 import com.example.feel.R
+import kotlinx.android.synthetic.main.fragment_home.view.*
 
 
-class HomeFragment : Fragment(), View.OnClickListener {
+class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
 
@@ -30,18 +29,10 @@ class HomeFragment : Fragment(), View.OnClickListener {
 
         homeViewModel.text.observe(viewLifecycleOwner, Observer { textView.text = it })
 
-        val btn: Button = root!!.findViewById<Button>(R.id.StartButton)
-        btn.setOnClickListener(this)
+        root.StartButton.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_feelingPositivityFragment)
+        }
 
         return root
-    }
-
-    override fun onClick(p0: View?) {
-        when (p0?.id) {
-            R.id.StartButton -> {
-                val intent = Intent(activity, FeelPositivityActivity::class.java)
-                activity?.startActivity(intent)
-            }
-        }
     }
 }

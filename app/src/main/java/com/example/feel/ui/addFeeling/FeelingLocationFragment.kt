@@ -1,38 +1,45 @@
 package com.example.feel.ui.addFeeling
 
-import android.annotation.SuppressLint
-import android.content.Intent
 import android.graphics.Matrix
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
 import android.view.MotionEvent
-import android.widget.*
-import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.core.graphics.drawable.toBitmap
+import androidx.navigation.fragment.findNavController
 import com.example.feel.R
+import kotlinx.android.synthetic.main.fragment_feeling_location.view.*
 
 
-class FeelBodyActivity : AppCompatActivity() {
-    @SuppressLint("ClickableViewAccessibility")
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.feeling_body)
+class FeelingLocationFragment : Fragment() {
 
-        val nextButton = findViewById<Button>(R.id.NextButton)
+    private lateinit var currentView: View
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        // Inflate the layout for this fragment
+        currentView =  inflater.inflate(R.layout.fragment_feeling_location, container, false)
+
+        val nextButton = currentView.NextButton
         nextButton.setOnClickListener {
-            val intent = Intent(this, FeelTriggerActivity::class.java)
-            startActivity(intent)
+            findNavController().navigate(R.id.action_feelingLocationFragment_to_feelingTriggerFragment)
         }
 
-        val bodyImage = findViewById<ImageView>(R.id.body)
-        bodyImage.setOnTouchListener { v, event ->
+        val bodyImage = currentView.body
+        bodyImage.setOnTouchListener({ v, event ->
             when (event?.action) {
                 MotionEvent.ACTION_DOWN ->
-                    onBodyClicked(event);
+                    onBodyClicked(event)
             }
-
             v?.onTouchEvent(event) ?: true
-        }
+        })
+
+        return currentView
     }
 
     private fun onBodyClicked(event: MotionEvent) {
@@ -42,8 +49,8 @@ class FeelBodyActivity : AppCompatActivity() {
         val touchSpotSize = 200
 
         if (touchOnBody) {
-            val constraintLayout = findViewById<ConstraintLayout>(R.id.body_layout)
-            val imageView = ImageView(this)
+            val constraintLayout = currentView.body_layout
+            val imageView = ImageView(requireContext())
             imageView.x = event.x - touchSpotSize/2
             imageView.y = event.y - touchSpotSize/2
             imageView.setImageResource(R.drawable.ic_touch_spot)
@@ -55,7 +62,7 @@ class FeelBodyActivity : AppCompatActivity() {
     }
 
     private fun getHotspotColor(x: Float, y: Float): Int {
-        val img = findViewById<ImageView>(R.id.body)
+        val img = currentView.body
 
         val imgDrawable = img.drawable
         val bitmap = imgDrawable.toBitmap()
@@ -72,4 +79,3 @@ class FeelBodyActivity : AppCompatActivity() {
         return touchedRGB
     }
 }
-

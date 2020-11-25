@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.feel.FeelBetterActivity
+import com.example.feel.ui.feelBetter.FeelBetterActivity
 import com.example.feel.R
 
 class Exercise1 : AppCompatActivity() {

@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_homeFragment_to_listFragment"
             app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_feelingPositivityFragment"
+            app:destination="@id/feelingPositivityFragment" />
     </fragment>
     <fragment
         android:id="@+id/listFragment"
@@ -34,5 +37,103 @@
         <action
             android:id="@+id/action_addFragment_to_listFragment"
             app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feelingPositivityFragment"
+        android:name="com.example.feel.ui.addFeeling.FeelingPositivityFragment"
+        android:label="fragment_feeling_positivity"
+        tools:layout="@layout/fragment_feeling_positivity" >
+        <action
+            android:id="@+id/action_feelingPositivityFragment_to_feelingIntensityFragment"
+            app:destination="@id/feelingIntensityFragment" />
+        <action
+            android:id="@+id/action_feelingPositivityFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feelingIntensityFragment"
+        android:name="com.example.feel.ui.addFeeling.FeelingIntensityFragment"
+        android:label="fragment_feeling_intensity"
+        tools:layout="@layout/fragment_feeling_intensity" >
+        <action
+            android:id="@+id/action_feelingIntensityFragment_to_feelingLocationFragment"
+            app:destination="@id/feelingLocationFragment" />
+        <action
+            android:id="@+id/action_feelingIntensityFragment_to_feelingPositivityFragment"
+            app:destination="@id/feelingPositivityFragment" />
+        <argument android:name="feelingData"
+            app:argType="android.os.Bundle" />
+    </fragment>
+    <fragment
+        android:id="@+id/feelingLocationFragment"
+        android:name="com.example.feel.ui.addFeeling.FeelingLocationFragment"
+        android:label="fragment_feeling_location"
+        tools:layout="@layout/fragment_feeling_location" >
+        <action
+            android:id="@+id/action_feelingLocationFragment_to_feelingTriggerFragment"
+            app:destination="@id/feelingTriggerFragment" />
+        <action
+            android:id="@+id/action_feelingLocationFragment_to_feelingIntensityFragment"
+            app:destination="@id/feelingIntensityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feelingTriggerFragment"
+        android:name="com.example.feel.ui.addFeeling.FeelingTriggerFragment"
+        android:label="fragment_feeling_trigger"
+        tools:layout="@layout/fragment_feeling_trigger" >
+        <action
+            android:id="@+id/action_feelingTriggerFragment_to_feelEmotionFragment"
+            app:destination="@id/feelEmotionFragment" />
+        <action
+            android:id="@+id/action_feelingTriggerFragment_to_feelingLocationFragment"
+            app:destination="@id/feelingLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feelEmotionFragment"
+        android:name="com.example.feel.ui.addFeeling.FeelEmotionFragment"
+        android:label="fragment_feel_emotion"
+        tools:layout="@layout/fragment_feel_emotion" >
+        <action
+            android:id="@+id/action_feelEmotionFragment_to_feelingTriggerFragment"
+            app:destination="@id/feelingTriggerFragment" />
+        <action
+            android:id="@+id/action_feelEmotionFragment_to_feelReactionFragment"
+            app:destination="@id/feelReactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feelReactionFragment"
+        android:name="com.example.feel.ui.addFeeling.FeelReactionFragment"
+        android:label="fragment_feel_reaction"
+        tools:layout="@layout/fragment_feel_reaction" >
+        <action
+            android:id="@+id/action_feelReactionFragment_to_feelEmotionFragment"
+            app:destination="@id/feelEmotionFragment" />
+        <action
+            android:id="@+id/action_feelReactionFragment_to_feelWhenFragment"
+            app:destination="@id/feelWhenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feelWhenFragment"
+        android:name="com.example.feel.ui.addFeeling.FeelWhenFragment"
+        android:label="fragment_feel_when"
+        tools:layout="@layout/fragment_feel_when" >
+        <action
+            android:id="@+id/action_feelWhenFragment_to_feelReactionFragment"
+            app:destination="@id/feelReactionFragment" />
+        <action
+            android:id="@+id/action_feelWhenFragment_to_feelOrUnderstandBetterFragment"
+            app:destination="@id/feelOrUnderstandBetterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feelOrUnderstandBetterFragment"
+        android:name="com.example.feel.ui.addFeeling.FeelOrUnderstandBetterFragment"
+        android:label="fragment_feel_or_understand_better"
+        tools:layout="@layout/fragment_feel_or_understand_better" >
+        <action
+            android:id="@+id/action_feelOrUnderstandBetterFragment_to_feelWhenFragment"
+            app:destination="@id/feelWhenFragment" />
+        <action
+            android:id="@+id/action_feelOrUnderstandBetterFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
 </navigation>

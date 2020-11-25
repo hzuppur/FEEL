@@ -17,17 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.addFeeling.FeelPositivityActivity" />
-        <activity android:name=".ui.addFeeling.FeelIntensityActivity" />
-        <activity android:name=".ui.addFeeling.FeelBodyActivity" />
-        <activity android:name=".ui.addFeeling.FeelTriggerActivity" />
-        <activity android:name=".ui.addFeeling.FeelEmotionActivity" />
-        <activity android:name=".ui.addFeeling.FeelWhenActivity" />
-        <activity android:name=".ui.addFeeling.FeelReactedActivity" />
-        <activity android:name=".ui.addFeeling.FeelUnderstandOrBetter" />
-        <activity android:name=".FeelBetterActivity" />
+        <activity android:name=".ui.feelBetter.FeelBetterActivity" />
         <activity android:name=".ui.exercises.Exercise1" />
-        <activity android:name=".UnderstandActivity" />
+        <activity android:name=".ui.understand.UnderstandActivity" />
     </application>
 
 </manifest>
