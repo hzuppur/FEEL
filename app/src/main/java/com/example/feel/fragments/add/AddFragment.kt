@@ -11,7 +11,6 @@ import androidx.navigation.fragment.findNavController
 import com.example.feel.data.FeelingSpot
 import com.example.feel.R
 import com.example.feel.data.Feeling
-import com.example.feel.data.FeelingSpots
 import com.example.feel.data.FeelingViewModel
 import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_add.view.*
@@ -40,7 +39,7 @@ class AddFragment : Fragment() {
     private fun insertDataToDataToDatabase() {
         val feeling_positivity = editPositivity.text
         val feeling_intensity = editIntensity.text
-        val feeling_location = FeelingSpots(listOf<FeelingSpot>(FeelingSpot(1f,1f), FeelingSpot(1f,1f)))
+        val feeling_location = listOf(FeelingSpot(1f,1f), FeelingSpot(1f,1f))
         val trigger = editTrigger.text.toString()
         val feeling_type = editType.text.toString()
         val reaction_to_feeling = editReaction.text.toString()

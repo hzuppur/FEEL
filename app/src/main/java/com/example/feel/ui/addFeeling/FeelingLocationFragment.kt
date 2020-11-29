@@ -1,5 +1,6 @@
 package com.example.feel.ui.addFeeling
 
+import android.annotation.SuppressLint
 import android.graphics.Matrix
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,15 +10,21 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.core.graphics.drawable.toBitmap
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.feel.R
+import com.example.feel.data.FeelingSpot
+import com.example.feel.data.FeelingTempViewModel
 import kotlinx.android.synthetic.main.fragment_feeling_location.view.*
 
 
 class FeelingLocationFragment : Fragment() {
 
     private lateinit var currentView: View
+    private val viewModel: FeelingTempViewModel by activityViewModels()
+    private val feelingLocations: MutableList<FeelingSpot> = mutableListOf()
 
+    @SuppressLint("ClickableViewAccessibility")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,17 +34,18 @@ class FeelingLocationFragment : Fragment() {
 
         val nextButton = currentView.NextButton
         nextButton.setOnClickListener {
+            viewModel.feelingLocation = feelingLocations
             findNavController().navigate(R.id.action_feelingLocationFragment_to_feelingTriggerFragment)
         }
 
         val bodyImage = currentView.body
-        bodyImage.setOnTouchListener({ v, event ->
+        bodyImage.setOnTouchListener { v, event ->
             when (event?.action) {
                 MotionEvent.ACTION_DOWN ->
                     onBodyClicked(event)
             }
             v?.onTouchEvent(event) ?: true
-        })
+        }
 
         return currentView
     }
@@ -49,6 +57,8 @@ class FeelingLocationFragment : Fragment() {
         val touchSpotSize = 200
 
         if (touchOnBody) {
+            feelingLocations.add(FeelingSpot(event.x, event.y))
+
             val constraintLayout = currentView.body_layout
             val imageView = ImageView(requireContext())
             imageView.x = event.x - touchSpotSize/2

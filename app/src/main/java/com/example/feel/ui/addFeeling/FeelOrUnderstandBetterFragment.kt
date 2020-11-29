@@ -6,14 +6,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.fragment.app.activityViewModels
 import com.example.feel.ui.feelBetter.FeelBetterActivity
 import com.example.feel.MainActivity
 import com.example.feel.R
+import com.example.feel.data.FeelingTempViewModel
 import com.example.feel.ui.understand.UnderstandActivity
 import kotlinx.android.synthetic.main.fragment_feel_or_understand_better.view.*
 
 
 class FeelOrUnderstandBetterFragment : Fragment() {
+
+    private val viewModel: FeelingTempViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -21,6 +26,8 @@ class FeelOrUnderstandBetterFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_feel_or_understand_better, container, false)
+        viewModel.addToDatabase(this)
+        //Toast.makeText(requireContext(), viewModel.feeling.trigger.toString(), Toast.LENGTH_LONG).show()
 
         val nextButton = view.NextButton
         val betterButton = view.feelBetterButton

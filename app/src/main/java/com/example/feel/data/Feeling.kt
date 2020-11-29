@@ -15,7 +15,7 @@ data class Feeling(
     val feeling_intensity: Int,
 
     @TypeConverters(CategoryConverter::class)
-    val feeling_location: FeelingSpots?,
+    val feeling_location: List<FeelingSpot>,
 
     val trigger: String,
 
@@ -23,18 +23,14 @@ data class Feeling(
 
     val reaction_to_feeling: String,
 
-    val feeling_time: Int
-)
-
-data class FeelingSpots(
-    val feeling_location: List<FeelingSpot> = ArrayList()
+    val feeling_time: Long
 )
 
 class CategoryConverter {
     @TypeConverter
-    fun toCategories(value: String?): FeelingSpots {
+    fun toCategories(value: String?): List<FeelingSpot> {
         if (value == null || value.isEmpty()) {
-            return FeelingSpots()
+            return listOf<FeelingSpot>()
         }
 
         val list: List<String> = value.split(",")
@@ -45,11 +41,11 @@ class CategoryConverter {
                 feelingSpotList.add(FeelingSpot(pos[0].toFloat(), pos[1].toFloat()))
             }
         }
-        return FeelingSpots(feelingSpotList)
+        return feelingSpotList
     }
 
     @TypeConverter
-    fun toString(feeling_location: FeelingSpots?): String {
+    fun toString(feeling_location: List<FeelingSpot>?): String {
 
         var string = ""
 
@@ -57,7 +53,7 @@ class CategoryConverter {
             return string
         }
 
-        feeling_location.feeling_location.forEach {
+        feeling_location.forEach {
             string += "${it.x}:${it.y},"
         }
         return string

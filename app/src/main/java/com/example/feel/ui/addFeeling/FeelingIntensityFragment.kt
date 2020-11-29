@@ -6,12 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.SeekBar
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.feel.R
+import com.example.feel.data.FeelingTempViewModel
 import kotlinx.android.synthetic.main.fragment_feeling_intensity.view.*
 
 
 class FeelingIntensityFragment : Fragment() {
+
+    private val viewModel: FeelingTempViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -21,13 +25,16 @@ class FeelingIntensityFragment : Fragment() {
         val view =  inflater.inflate(R.layout.fragment_feeling_intensity, container, false)
         val seekText = view.IntensityValue
         val seekProgress = view.SeekBarProgress
+        var intensity = 0
 
         val nextButton = view.NextButton
         nextButton.setOnClickListener {
+            viewModel.feelingIntensity = intensity
             findNavController().navigate(R.id.action_feelingIntensityFragment_to_feelingLocationFragment)
         }
 
         val seek = view.seekBar
+
         seek?.setOnSeekBarChangeListener(object :
             SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean) {
@@ -39,6 +46,7 @@ class FeelingIntensityFragment : Fragment() {
                 }
                 val prog = progress * (seek.width - 2 * seek.thumbOffset) / seek.max
                 seekProgress.text = progress.toString()
+                intensity = progress
                 seekProgress.x = seek.x + prog + seek.thumbOffset / 2
             }
 
