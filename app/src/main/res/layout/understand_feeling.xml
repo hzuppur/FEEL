@@ -2,30 +2,43 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_background">
 
     <Button
-        android:id="@+id/NextButton"
+        android:id="@+id/BackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
-        android:text="Tagasi"
+        android:text="@string/back"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.959" />
+        app:layout_constraintVertical_bias="0.96" />
 
-    <TextView
-        android:id="@+id/textView6"
+    <Button
+        android:id="@+id/PlayButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Miks on mul selline tunne?"
+        android:background="?attr/colorPrimary"
+        android:text="@string/PlayButton"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <TextView
+        android:id="@+id/WhyIHaveThisFeelingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/WhyIHaveThisFeeling"
         android:textColor="#ffffff"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,19 +48,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.112" />
 
-    <TextView
-        android:id="@+id/understandText"
-        android:layout_width="340dp"
-        android:layout_height="310dp"
-        android:text="@string/placeholder"
-        android:textColor="#ffffff"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/understandRecyclerView"
+        android:layout_width="355dp"
+        android:layout_height="430dp"
+        app:layout_constraintBottom_toTopOf="@+id/BackButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.305" />
+        app:layout_constraintTop_toBottomOf="@+id/WhyIHaveThisFeelingText"
+        app:layout_constraintVertical_bias="0.488" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

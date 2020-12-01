@@ -1,5 +1,6 @@
 package com.example.feel.fragments.list
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,12 +21,15 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.custom_row, parent, false))
     }
 
+    @SuppressLint("SimpleDateFormat")
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = feelingList[position]
-        holder.itemView.id_txt.text = currentItem.id.toString()
-        holder.itemView.firstName_txt.text = currentItem.feeling_type
-        holder.itemView.lastName_txt.text = currentItem.trigger
-        holder.itemView.age_txt.text = currentItem.feeling_positivity.toString()
+
+        val sdf = java.text.SimpleDateFormat("dd. MMMM")
+        val date = java.util.Date(currentItem.feeling_time)
+
+        holder.itemView.when_txt.text = sdf.format(date)
+        holder.itemView.emotion_txt.text = currentItem.feeling_type
     }
 
     override fun getItemCount(): Int {

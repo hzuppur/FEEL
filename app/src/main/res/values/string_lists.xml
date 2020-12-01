@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="understand_depression_txt">
+        <item>"Mis on depresioon?"</item>
+        <item>"Me kõik tunneme end aeg-ajalt halvasti: "</item>
+        <item>"oleme kurvad, pettunud, solvunud, ärritunud, masendunud –"</item>
+        <item>"need on normaalsed tunded reageerimaks igapäevaelu tagasilöökidele ja ebaõnnestumistele, need on tunded meie elust."</item>
+        <item>"Depressioon on midagi enamat kui lühiajaline halb tuju või kurbus,"</item>
+        <item>"depressioon on haigus.",</item>
+        <item>"Depressiooni korral on inimesel raske oma igapäevase eluga toime tulla ja ta on kaotanud lootuse, et tulevikus võiks paremaks minna."</item>
+        <item>"Ta tunneb end masendunult ja õnnetuna enamuse ajast pikema perioodi"</item>
+        <item>"vähemalt kahe nädala vältel."</item>
+        <item>"Depressioon mõjutab oluliselt nii vaimset kui füüsilist heaolu."</item>
+        <item>"Depressiooni võib kirjeldada kui “olen täiesti masendunud ja tühi” ning “kõik on lootusetu”."</item>
+        <item>"Sageli on depressioon ja ärevus omavahel seotud, mis tähendab,"</item>
+        <item>"et ka depressiooni korral võid tunda end ärevana ja ärritatuna."</item>
+        <item>"”Mul oli väga raske hommikul voodist välja tulla.”"</item>
+        <item>"”Ma tahtsin end teki alla peita ja mitte kellegagi rääkida.” "</item>
+        <item>"”Mu söögiisu oli kadunud ja kehakaal langes.” "</item>
+        <item>"”Mitte midagi ei tundunud enam huvitav ja lahe. Kõik oli nõme.” "</item>
+        <item>"”Ma olin kogu aeg väsinud, mu uni oli katkendlik.” "</item>
+        <item>"”Aga ma teadsin, et pean end käigus hoidma,” "</item>
+        <item>"”sest muidu jäävad mu tegemised pooleli.” "</item>
+        <item>"”Samas tundus kõik võimatu, ma tundsin, et mitte midagi ei muutu mitte kunagi paremaks.”"</item>
+    </string-array>
+    <integer-array name="understand_depression_timestamps">
+        <item>29</item>
+        <item>53</item>
+        <item>96</item>
+        <item>165</item>
+        <item>208</item>
+        <item>226</item>
+        <item>315</item>
+        <item>360</item>
+        <item>375</item>
+        <item>419</item>
+        <item>486</item>
+        <item>532</item>
+        <item>567</item>
+        <item>593</item>
+        <item>623</item>
+        <item>652</item>
+        <item>692</item>
+        <item>728</item>
+        <item>759</item>
+        <item>782</item>
+        <item>841</item>
+    </integer-array>
+</resources>

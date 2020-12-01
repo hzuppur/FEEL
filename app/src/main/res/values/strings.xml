@@ -26,7 +26,11 @@
     <string name="what_emotion">Mida sa tundsid?</string>
     <string name="when_you_felt">Millal sa seda tunnet tundsid?</string>
     <string name="how_reacted">Kuidas sa reageerisid sellele tundele</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget lorem non erat porta bibendum ac sit amet tortor. Suspendisse posuere iaculis risus. Quisque vel lacus libero. Morbi sit amet molestie elit. In eu faucibus felis. Sed ultrices, erat nec interdum bibendum, turpis diam blandit ligula, nec tempus enim nunc at magna. Duis euismod felis at sapien vulputate, ullamcorper tincidunt quam dignissim. Nulla egestas mi massa, at commodo diam tincidunt quis. Etiam in vehicula tortor, sed dictum leo. Suspendisse purus nulla, ullamcorper sit amet mauris et, vehicula molestie turpis.</string>
+    <string name="back">Tagasi</string>
+    <string name="WhyIHaveThisFeeling">Miks on mul selline tunne?</string>
+    <string name="PlayButton">Alusta</string>
+    <string name="PauseButton">Paus</string>
+    <string name="ContinueButton">Jätka</string>
 </resources>

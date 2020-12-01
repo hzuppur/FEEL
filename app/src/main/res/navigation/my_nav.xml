@@ -136,5 +136,12 @@
         <action
             android:id="@+id/action_feelOrUnderstandBetterFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_feelOrUnderstandBetterFragment_to_understandActivity"
+            app:destination="@id/understandActivity" />
     </fragment>
+    <activity
+        android:id="@+id/understandActivity"
+        android:name="com.example.feel.ui.understand.UnderstandActivity"
+        android:label="UnderstandActivity" />
 </navigation>
