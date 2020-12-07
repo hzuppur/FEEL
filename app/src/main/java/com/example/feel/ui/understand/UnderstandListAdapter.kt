@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.feel.R
-import com.example.feel.fragments.list.ListAdapter
+import com.example.feel.ui.viewFeelings.list.ListAdapter
 import kotlinx.android.synthetic.main.understand_text_row.view.*
 
 class UnderstandListAdapter : RecyclerView.Adapter<ListAdapter.MyViewHolder>() {

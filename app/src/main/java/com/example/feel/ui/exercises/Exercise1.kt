@@ -14,8 +14,7 @@ class Exercise1 : AppCompatActivity() {
 
         val nextButton = findViewById<Button>(R.id.NextButton)
         nextButton.setOnClickListener {
-            val intent = Intent(this, FeelBetterActivity::class.java)
-            startActivity(intent)
+            onBackPressed()
         }
     }
 }

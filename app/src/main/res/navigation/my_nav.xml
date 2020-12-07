@@ -19,29 +19,20 @@
     </fragment>
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.example.feel.fragments.list.ListFragment"
-        android:label="List"
+        android:name="com.example.feel.ui.viewFeelings.list.ListFragment"
+        android:label="Minu tunded"
         tools:layout="@layout/fragment_list" >
-        <action
-            android:id="@+id/action_listFragment_to_addFragment"
-            app:destination="@id/addFragment" />
         <action
             android:id="@+id/action_listFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/addFragment"
-        android:name="com.example.feel.fragments.add.AddFragment"
-        android:label="Add"
-        tools:layout="@layout/fragment_add" >
         <action
-            android:id="@+id/action_addFragment_to_listFragment"
-            app:destination="@id/listFragment" />
+            android:id="@+id/action_listFragment_to_detailedViewFragment"
+            app:destination="@id/detailedViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/feelingPositivityFragment"
         android:name="com.example.feel.ui.addFeeling.FeelingPositivityFragment"
-        android:label="fragment_feeling_positivity"
+        android:label="Lisa tunne"
         tools:layout="@layout/fragment_feeling_positivity" >
         <action
             android:id="@+id/action_feelingPositivityFragment_to_feelingIntensityFragment"
@@ -54,7 +45,7 @@
     <fragment
         android:id="@+id/feelingIntensityFragment"
         android:name="com.example.feel.ui.addFeeling.FeelingIntensityFragment"
-        android:label="fragment_feeling_intensity"
+        android:label="Lisa tunne"
         tools:layout="@layout/fragment_feeling_intensity" >
         <action
             android:id="@+id/action_feelingIntensityFragment_to_feelingLocationFragment"
@@ -68,7 +59,7 @@
     <fragment
         android:id="@+id/feelingLocationFragment"
         android:name="com.example.feel.ui.addFeeling.FeelingLocationFragment"
-        android:label="fragment_feeling_location"
+        android:label="Lisa tunne"
         tools:layout="@layout/fragment_feeling_location" >
         <action
             android:id="@+id/action_feelingLocationFragment_to_feelingTriggerFragment"
@@ -80,7 +71,7 @@
     <fragment
         android:id="@+id/feelingTriggerFragment"
         android:name="com.example.feel.ui.addFeeling.FeelingTriggerFragment"
-        android:label="fragment_feeling_trigger"
+        android:label="Lisa tunne"
         tools:layout="@layout/fragment_feeling_trigger" >
         <action
             android:id="@+id/action_feelingTriggerFragment_to_feelEmotionFragment"
@@ -92,7 +83,7 @@
     <fragment
         android:id="@+id/feelEmotionFragment"
         android:name="com.example.feel.ui.addFeeling.FeelEmotionFragment"
-        android:label="fragment_feel_emotion"
+        android:label="Lisa tunne"
         tools:layout="@layout/fragment_feel_emotion" >
         <action
             android:id="@+id/action_feelEmotionFragment_to_feelingTriggerFragment"
@@ -104,7 +95,7 @@
     <fragment
         android:id="@+id/feelReactionFragment"
         android:name="com.example.feel.ui.addFeeling.FeelReactionFragment"
-        android:label="fragment_feel_reaction"
+        android:label="Lisa tunne"
         tools:layout="@layout/fragment_feel_reaction" >
         <action
             android:id="@+id/action_feelReactionFragment_to_feelEmotionFragment"
@@ -116,7 +107,7 @@
     <fragment
         android:id="@+id/feelWhenFragment"
         android:name="com.example.feel.ui.addFeeling.FeelWhenFragment"
-        android:label="fragment_feel_when"
+        android:label="Lisa tunne"
         tools:layout="@layout/fragment_feel_when" >
         <action
             android:id="@+id/action_feelWhenFragment_to_feelReactionFragment"
@@ -128,7 +119,7 @@
     <fragment
         android:id="@+id/feelOrUnderstandBetterFragment"
         android:name="com.example.feel.ui.addFeeling.FeelOrUnderstandBetterFragment"
-        android:label="fragment_feel_or_understand_better"
+        android:label=""
         tools:layout="@layout/fragment_feel_or_understand_better" >
         <action
             android:id="@+id/action_feelOrUnderstandBetterFragment_to_feelWhenFragment"
@@ -144,4 +135,12 @@
         android:id="@+id/understandActivity"
         android:name="com.example.feel.ui.understand.UnderstandActivity"
         android:label="UnderstandActivity" />
+    <fragment
+        android:id="@+id/detailedViewFragment"
+        android:name="com.example.feel.ui.viewFeelings.detailedView.DetailedViewFragment"
+        android:label="Minu tunded" >
+        <action
+            android:id="@+id/action_detailedViewFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
 </navigation>

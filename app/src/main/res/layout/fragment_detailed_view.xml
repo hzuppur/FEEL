@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/FeelingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:paddingEnd="40dp"
+                android:text="@string/ExampleDateDayMonthYear"
+                android:textSize="30sp"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/FeelingPos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="60dp"
+                android:paddingEnd="40dp"
+                android:text="@string/DetailsFeelingPos"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/FeelingIntensity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="60dp"
+                android:paddingEnd="40dp"
+                android:text="@string/DetailsFeelingIntensity"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/FeelingEmotion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="60dp"
+                android:paddingEnd="40dp"
+                android:text="@string/DetailsFeelingEmotion"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/FeelingTrigger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="60dp"
+                android:paddingEnd="40dp"
+                android:text="@string/DetailsFeelingTrigger"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/FeelingReaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="60dp"
+                android:paddingEnd="40dp"
+                android:text="@string/DetailsFeelingReaction"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/body_layout_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/body"
+                    android:layout_width="340dp"
+                    android:layout_height="340dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/ic_human"
+                    tools:ignore="VectorDrawableCompat"
+                    android:contentDescription="@string/FeelWhereExplanationText" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

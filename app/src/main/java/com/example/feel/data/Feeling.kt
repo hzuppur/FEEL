@@ -4,6 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverter
 import androidx.room.TypeConverters
+import kotlinx.android.parcel.Parcelize
+import kotlinx.android.parcel.RawValue
 
 @Entity(tableName = "feeling_table")
 data class Feeling(
@@ -13,6 +15,7 @@ data class Feeling(
     val feeling_positivity: Int,
 
     val feeling_intensity: Int,
+
 
     @TypeConverters(CategoryConverter::class)
     val feeling_location: List<FeelingSpot>,

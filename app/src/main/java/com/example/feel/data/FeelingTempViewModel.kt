@@ -44,10 +44,6 @@ class FeelingTempViewModel : ViewModel() {
             )
 
             mFeelingViewModel.addFeeling(feeling)
-        }else{
-            Log.d("YEET", "===================================")
-            Log.d("YEET", "Something missing")
-            Log.d("YEET", "===================================")
         }
     }
 
