@@ -43,8 +43,8 @@ class DetailedViewFragment : Fragment() {
         currentView.FeelingPos.text = getString(R.string.DetailsFeelingPos, feeling.feeling_positivity)
         currentView.FeelingIntensity.text = getString(R.string.DetailsFeelingIntensity, feeling.feeling_positivity)
         currentView.FeelingEmotion.text = getString(R.string.DetailsFeelingEmotion, feeling.feeling_type)
-        currentView.FeelingTrigger.text = getString(R.string.DetailsFeelingEmotion, feeling.trigger)
-        currentView.FeelingReaction.text = getString(R.string.DetailsFeelingEmotion, feeling.reaction_to_feeling)
+        currentView.FeelingTrigger.text = getString(R.string.DetailsFeelingTrigger, feeling.trigger)
+        currentView.FeelingReaction.text = getString(R.string.DetailsFeelingReaction, feeling.reaction_to_feeling)
 
 
         // Add touch spots to image
