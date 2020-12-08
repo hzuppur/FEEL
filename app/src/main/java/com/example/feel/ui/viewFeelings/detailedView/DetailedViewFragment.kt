@@ -6,15 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.example.feel.R
 import com.example.feel.data.DetailedViewViewModel
 import com.example.feel.data.Feeling
-import kotlinx.android.synthetic.main.custom_row.view.*
 import kotlinx.android.synthetic.main.fragment_detailed_view.view.*
-import kotlinx.android.synthetic.main.fragment_feeling_location.view.*
 import java.util.*
 
 class DetailedViewFragment : Fragment() {
@@ -56,6 +53,7 @@ class DetailedViewFragment : Fragment() {
 
     private fun addTouchSpots(feeling: Feeling){
         val touchSpotSize = 200
+        // Iterate over all of the touch spots
         for (spot in feeling.feeling_location){
             val constraintLayout = currentView.body_layout_container
             val imageView = ImageView(requireContext())

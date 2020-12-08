@@ -10,7 +10,8 @@ import kotlinx.android.synthetic.main.fragment_exercise.view.*
 
 
 class ExerciseAdapter(
-    var exercise: List<Exercise>
+    private var exercise: List<Exercise>
+
 ) : RecyclerView.Adapter<ExerciseAdapter.ExerciseViewHolder>() {
     inner class ExerciseViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 

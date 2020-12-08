@@ -39,7 +39,7 @@ class CategoryConverter {
         val list: List<String> = value.split(",")
         val feelingSpotList = ArrayList<FeelingSpot>()
         for (item in list) {
-            if (!item.isEmpty()) {
+            if (item.isNotEmpty()) {
                 val pos = item.split(":")
                 feelingSpotList.add(FeelingSpot(pos[0].toFloat(), pos[1].toFloat()))
             }

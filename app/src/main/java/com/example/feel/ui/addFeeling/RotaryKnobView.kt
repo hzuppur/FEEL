@@ -24,11 +24,11 @@ class RotaryKnobView @JvmOverloads constructor(
     private var maxValue = 360
     private var minValue = 0
     var listener: RotaryKnobListener? = null
-    var value = 0
+    private var value = 0
     private var knobDrawable: Drawable? = null
     private var divider = 360f / (maxValue - minValue)
-    private var lastPos = 0f;
-    private var lastKnobPos = 0f;
+    private var lastPos = 0f
+    private var lastKnobPos = 0f
 
     interface RotaryKnobListener {
         fun onRotate(value: Int)
@@ -78,10 +78,10 @@ class RotaryKnobView @JvmOverloads constructor(
         setKnobPosition(knobPos)
 
         // Calculate rotary value
-        if (knobPos < 0){
-            value = abs(knobPos.toInt())
+        value = if (knobPos < 0){
+            abs(knobPos.toInt())
         }else {
-            value = 360 - knobPos.toInt()
+            360 - knobPos.toInt()
         }
 
 

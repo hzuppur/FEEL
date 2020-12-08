@@ -47,4 +47,11 @@
     <string name="FeelWhereImgDescription">Siin on siluett inimesest</string>
     <string name="FeelWhereExplanationText">Tule tähelepanuga peast allapoole ja pane tähele tundega kaasnevaid aistinguid kehas</string>
     <string name="ExampleDateDayMonthYear">4. Aprill 2020</string>
-</resources>
+    <string name="BreathingExerciseLable">Hingamisharjutus</string>
+    <string name="AddFeeling">Lisa tunne</string>
+    <string name="Today">Täna</string>
+    <string name="OtherTime">Muul ajal</string>
+    <string name="InitialIntensitiValue">0</string>
+    <string name="InitialPositivityValue">50</string>
+    <string name="DateFormat">%s. %s %s</string>
+    </resources>

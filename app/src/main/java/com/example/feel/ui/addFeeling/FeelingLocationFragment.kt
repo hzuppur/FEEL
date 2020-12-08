@@ -1,6 +1,7 @@
 package com.example.feel.ui.addFeeling
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.graphics.Matrix
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +9,9 @@ import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
+import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toBitmap
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -23,6 +26,7 @@ class FeelingLocationFragment : Fragment() {
     private lateinit var currentView: View
     private val viewModel: FeelingTempViewModel by activityViewModels()
     private val feelingLocations: MutableList<FeelingSpot> = mutableListOf()
+    private lateinit var nextButton: Button
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreateView(
@@ -32,11 +36,13 @@ class FeelingLocationFragment : Fragment() {
         // Inflate the layout for this fragment
         currentView =  inflater.inflate(R.layout.fragment_feeling_location, container, false)
 
-        val nextButton = currentView.NextButton
+        nextButton = currentView.NextButton
         nextButton.setOnClickListener {
             viewModel.feelingLocation = feelingLocations
             findNavController().navigate(R.id.action_feelingLocationFragment_to_feelingTriggerFragment)
         }
+
+        markButtonDisable(nextButton)
 
         val bodyImage = currentView.body
         bodyImage.setOnTouchListener { v, event ->
@@ -50,6 +56,18 @@ class FeelingLocationFragment : Fragment() {
         return currentView
     }
 
+    private fun markButtonDisable(button: Button) {
+        button.isEnabled = false
+        button.setTextColor(ContextCompat.getColor(requireContext(), R.color.colorPrimary))
+        button.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.colorPrimaryDark))
+    }
+
+    private fun markButtonEnable(button: Button) {
+        button.isEnabled = true
+        button.setTextColor(Color.WHITE)
+        button.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.colorPrimary))
+    }
+
     private fun onBodyClicked(event: MotionEvent) {
         // If touch color is -1, that means that the click was on body because the function don't get the color of vector image
         val touchOnBody = getHotspotColor(event.x, event.y) == -1
@@ -57,6 +75,8 @@ class FeelingLocationFragment : Fragment() {
         val touchSpotSize = 200
 
         if (touchOnBody) {
+            markButtonEnable(nextButton)
+
             feelingLocations.add(FeelingSpot(event.x, event.y))
 
             val constraintLayout = currentView.body_layout
@@ -84,8 +104,6 @@ class FeelingLocationFragment : Fragment() {
         val xCoord = touchPoint[0].toInt()
         val yCoord = touchPoint[1].toInt()
 
-        val touchedRGB = bitmap.getPixel(xCoord, yCoord)
-
-        return touchedRGB
+        return bitmap.getPixel(xCoord, yCoord)
     }
 }
