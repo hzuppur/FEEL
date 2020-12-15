@@ -10,53 +10,53 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        android:text="@string/HowYouWantToReact"
         android:textAlignment="center"
         android:textColor="#ffffff"
         android:textSize="30sp"
-        android:text="@string/HowYouWantToReact"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16" />
+        app:layout_constraintVertical_bias="0.1" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/NextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
         android:text="@string/CloseButton"
+        app:cornerRadius="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951" />
+        app:layout_constraintVertical_bias="0.95" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/understandButton"
         android:layout_width="270dp"
         android:layout_height="80dp"
-        android:background="?attr/colorPrimary"
         android:text="@string/WantToUnderstand"
+        app:cornerRadius="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424" />
+        app:layout_constraintVertical_bias="0.425" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/feelBetterButton"
         android:layout_width="270dp"
         android:layout_height="80dp"
-        android:background="?attr/colorPrimary"
         android:text="@string/WantToFelBetter"
+        app:cornerRadius="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/understandButton"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintVertical_bias="0.17" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

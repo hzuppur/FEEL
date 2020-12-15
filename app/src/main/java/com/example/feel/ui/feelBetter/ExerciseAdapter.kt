@@ -23,51 +23,28 @@ class ExerciseAdapter(private var exercise: List<Exercise>) :
 
         init {
             buttons.add(itemView.button)
+            itemView.button.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_play_arrow, 0, 0, 0)
 
             itemView.button.setOnClickListener {
+                val currentExercise = exercise[adapterPosition]
                 // Invoke listener to start or stop audio playback
                 // Audio playing is handled in FeelBetterActivity
-                onItemClick?.invoke(exercise[position])
+                onItemClick?.invoke(currentExercise)
 
                 // If currently pressed button was playing, change the icon to pause icon
                 // Else iterate over all buttons, reset their backgrounds and play icons
-                if (playing == exercise[position].fileID) {
-                    itemView.button.setCompoundDrawablesWithIntrinsicBounds(
-                        R.drawable.ic_play_arrow,
-                        0,
-                        0,
-                        0
-                    )
+                if (playing == currentExercise.fileID) {
+                    itemView.button.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_play_arrow, 0, 0, 0)
                     playing = -1
                 } else {
                     for (but in buttons) {
-                        but.setBackgroundColor(
-                            ContextCompat.getColor(
-                                mContex,
-                                R.color.colorPrimary
-                            )
-                        )
-                        but.setCompoundDrawablesWithIntrinsicBounds(
-                            R.drawable.ic_play_arrow,
-                            0,
-                            0,
-                            0
-                        );
+                        but.backgroundTintList = ContextCompat.getColorStateList(mContex, R.color.colorPrimary)
+                        but.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_play_arrow, 0, 0, 0)
                     }
 
-                    itemView.button.setBackgroundColor(
-                        ContextCompat.getColor(
-                            mContex,
-                            R.color.colorPrimaryDark
-                        )
-                    )
-                    itemView.button.setCompoundDrawablesWithIntrinsicBounds(
-                        R.drawable.ic_pause,
-                        0,
-                        0,
-                        0
-                    )
-                    playing = exercise[position].fileID
+                    itemView.button.backgroundTintList = ContextCompat.getColorStateList(mContex, R.color.colorPrimaryDark)
+                    itemView.button.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_pause, 0, 0, 0)
+                    playing = currentExercise.fileID
                 }
             }
         }

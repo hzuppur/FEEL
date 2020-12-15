@@ -9,7 +9,8 @@
         android:id="@+id/homeFragment"
         android:name="com.example.feel.ui.home.HomeFragment"
         android:label="@string/nav_header_title"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home"
+        app:startDestination="@id/action_homeFragment_to_feelingPositivityFragment">
         <action
             android:id="@+id/action_homeFragment_to_listFragment"
             app:destination="@id/listFragment" />

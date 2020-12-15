@@ -7,18 +7,18 @@
     android:background="@drawable/main_background">
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/BackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
         android:text="@string/back"
+        app:cornerRadius="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951" />
+        app:layout_constraintVertical_bias="0.95" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -43,8 +43,7 @@
                 android:paddingStart="30dp"
                 android:paddingEnd="40dp"
                 android:text="@string/ExampleDateDayMonthYear"
-                android:textSize="30sp"
-                />
+                android:textSize="30sp" />
 
             <Space
                 android:layout_width="match_parent"
@@ -124,6 +123,7 @@
                     android:id="@+id/body"
                     android:layout_width="340dp"
                     android:layout_height="340dp"
+                    android:contentDescription="@string/FeelWhereExplanationText"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -131,8 +131,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="1.0"
                     app:srcCompat="@drawable/ic_human"
-                    tools:ignore="VectorDrawableCompat"
-                    android:contentDescription="@string/FeelWhereExplanationText" />
+                    tools:ignore="VectorDrawableCompat" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <Space
