@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="?attr/colorPrimary"
-        android:drawableStart="@android:drawable/ic_media_play"
+        android:drawableStart="@drawable/ic_play_arrow"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text=""

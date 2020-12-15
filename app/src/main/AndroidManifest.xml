@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.feelBetter.FeelBetterActivity" />
-        <activity android:name=".ui.exercises.Exercise1" />
+        <activity android:name="com.example.feel.ui.feelBetter.exercises.Exercise1" />
         <activity android:name=".ui.understand.UnderstandActivity" />
     </application>
 

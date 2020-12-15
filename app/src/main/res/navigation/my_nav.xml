@@ -130,6 +130,9 @@
         <action
             android:id="@+id/action_feelOrUnderstandBetterFragment_to_understandActivity"
             app:destination="@id/understandActivity" />
+        <action
+            android:id="@+id/action_feelOrUnderstandBetterFragment_to_feelBetterActivity"
+            app:destination="@id/feelBetterActivity" />
     </fragment>
     <activity
         android:id="@+id/understandActivity"
@@ -143,4 +146,8 @@
             android:id="@+id/action_detailedViewFragment_to_listFragment"
             app:destination="@id/listFragment" />
     </fragment>
+    <activity
+        android:id="@+id/feelBetterActivity"
+        android:name="com.example.feel.ui.feelBetter.FeelBetterActivity"
+        android:label="FeelBetterActivity" />
 </navigation>
