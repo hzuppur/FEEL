@@ -5,7 +5,6 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import org.w3c.dom.UserDataHandler
 
 @Database(entities = [Feeling::class], version = 1, exportSchema = false)
 @TypeConverters(CategoryConverter::class)

@@ -1,6 +1,5 @@
 package com.example.feel.ui.viewFeelings.list
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,16 +9,17 @@ import com.example.feel.data.Feeling
 import kotlinx.android.synthetic.main.custom_row.view.*
 import java.util.*
 
-class ListAdapter(private val cellClickListener: CellClickListener): RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
+class ListAdapter(private val cellClickListener: CellClickListener) :
+    RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
 
     private var feelingList = emptyList<Feeling>()
 
-    class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-
-    }
+    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.custom_row, parent, false))
+        return MyViewHolder(
+            LayoutInflater.from(parent.context).inflate(R.layout.custom_row, parent, false)
+        )
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
@@ -40,7 +40,7 @@ class ListAdapter(private val cellClickListener: CellClickListener): RecyclerVie
         return feelingList.size
     }
 
-    fun setData(feeling: List<Feeling>){
+    fun setData(feeling: List<Feeling>) {
         this.feelingList = feeling
         notifyDataSetChanged()
     }

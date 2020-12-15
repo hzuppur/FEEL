@@ -2,7 +2,6 @@ package com.example.feel.ui.understand
 
 import android.graphics.Typeface
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.feel.R
@@ -12,8 +11,6 @@ import kotlinx.android.synthetic.main.understand_text_row.view.*
 class UnderstandListAdapter : RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
 
     private var textList = emptyList<String>()
-
-    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {}
 
     override fun getItemCount(): Int {
         return textList.size
@@ -26,9 +23,9 @@ class UnderstandListAdapter : RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
 
     override fun onBindViewHolder(holder: ListAdapter.MyViewHolder, position: Int) {
         val currentItem = textList[position]
-        if (currentItem.startsWith("”")){
+        if (currentItem.startsWith("”")) {
             holder.itemView.row_txt.setTypeface(null, Typeface.ITALIC)
-        }else {
+        } else {
             holder.itemView.row_txt.setTypeface(null, Typeface.NORMAL)
         }
         holder.itemView.row_txt.text = currentItem

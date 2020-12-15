@@ -5,16 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.feel.R
 import com.example.feel.data.DetailedViewViewModel
 import com.example.feel.data.Feeling
-import com.example.feel.data.FeelingTempViewModel
 import com.example.feel.data.FeelingViewModel
 import kotlinx.android.synthetic.main.fragment_list.view.*
 
@@ -29,7 +26,7 @@ class ListFragment : Fragment(), CellClickListener {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view =  inflater.inflate(R.layout.fragment_list, container, false)
+        val view = inflater.inflate(R.layout.fragment_list, container, false)
 
         // Recyclerview
         val adapter = ListAdapter(this)
@@ -40,7 +37,7 @@ class ListFragment : Fragment(), CellClickListener {
 
         // FeelingViewModel
         mFeelingViewModel = ViewModelProvider(this).get(FeelingViewModel::class.java)
-        mFeelingViewModel.readAllData.observe(viewLifecycleOwner, Observer { feeling ->
+        mFeelingViewModel.readAllData.observe(viewLifecycleOwner, { feeling ->
             adapter.setData(feeling.sortedByDescending { it.feeling_time })
         })
 

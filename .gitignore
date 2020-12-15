@@ -16,9 +16,6 @@
 # Windows thumbnail db
 Thumbs.db
 
-# OSX files
-.DS_Store
-
 # built application files
 *.apk
 *.ap_
@@ -43,13 +40,11 @@ local.properties
   
 # Android Studio
 .idea
-.gradle
 /*/local.properties
 /*/out
 /*/*/build
 build
 /*/*/production
-*.iml
 *.iws
 *.ipr
 *~

@@ -1,7 +1,6 @@
 package com.example.feel.ui.understand
 
 import android.content.Context
-import android.graphics.PointF
 import android.util.DisplayMetrics
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSmoothScroller

@@ -1,15 +1,7 @@
 <resources>
     <string name="app_name">FEEL</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">FEEL</string>
     <string name="nav_header_subtitle">Sinu turvatunde rakendus</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-
-    <string name="menu_home">FEEL</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
     <string name="how_feel_text">Kuidas sa ennast tunned?</string>
     <string name="start_button">Alusta</string>
     <string name="FeelingValueNeutral">Neutraalselt</string>
@@ -26,8 +18,6 @@
     <string name="what_emotion">Leia sellele tundele sõna</string>
     <string name="when_you_felt">Millal sa seda tunnet tundsid?</string>
     <string name="how_reacted">Kuidas sa reageerisid sellele tundele</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget lorem non erat porta bibendum ac sit amet tortor. Suspendisse posuere iaculis risus. Quisque vel lacus libero. Morbi sit amet molestie elit. In eu faucibus felis. Sed ultrices, erat nec interdum bibendum, turpis diam blandit ligula, nec tempus enim nunc at magna. Duis euismod felis at sapien vulputate, ullamcorper tincidunt quam dignissim. Nulla egestas mi massa, at commodo diam tincidunt quis. Etiam in vehicula tortor, sed dictum leo. Suspendisse purus nulla, ullamcorper sit amet mauris et, vehicula molestie turpis.</string>
     <string name="back">Tagasi</string>
     <string name="WhyIHaveThisFeeling">Mis paneb mind niiviisi tundma?</string>
     <string name="PlayButton">Alusta</string>
@@ -47,11 +37,13 @@
     <string name="FeelWhereImgDescription">Siin on siluett inimesest</string>
     <string name="FeelWhereExplanationText">Tule tähelepanuga peast allapoole ja pane tähele tundega kaasnevaid aistinguid kehas</string>
     <string name="ExampleDateDayMonthYear">4. Aprill 2020</string>
-    <string name="BreathingExerciseLable">Hingamisharjutus</string>
     <string name="AddFeeling">Lisa tunne</string>
     <string name="Today">Täna</string>
     <string name="OtherTime">Muul ajal</string>
     <string name="InitialIntensitiValue">0</string>
     <string name="InitialPositivityValue">50</string>
     <string name="DateFormat">%s. %s %s</string>
-    </resources>
+    <string name="home">Kodu</string>
+    <string name="my_feelings">Minu tunded</string>
+    <string name="emotion_wheel_description">Ratas millelt saab valida tunde</string>
+</resources>

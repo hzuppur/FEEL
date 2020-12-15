@@ -4,8 +4,6 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverter
 import androidx.room.TypeConverters
-import kotlinx.android.parcel.Parcelize
-import kotlinx.android.parcel.RawValue
 
 @Entity(tableName = "feeling_table")
 data class Feeling(
@@ -33,7 +31,7 @@ class CategoryConverter {
     @TypeConverter
     fun toCategories(value: String?): List<FeelingSpot> {
         if (value == null || value.isEmpty()) {
-            return listOf<FeelingSpot>()
+            return listOf()
         }
 
         val list: List<String> = value.split(",")

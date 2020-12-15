@@ -1,5 +1,6 @@
 package com.example.feel.ui.addFeeling
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Matrix
 import android.graphics.drawable.Drawable
@@ -131,6 +132,7 @@ class RotaryKnobView @JvmOverloads constructor(
         knobImageView.imageMatrix = matrix
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     override fun onTouchEvent(event: MotionEvent): Boolean {
         return if (gestureDetector.onTouchEvent(event))
             true

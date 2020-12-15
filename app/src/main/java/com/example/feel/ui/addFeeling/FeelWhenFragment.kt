@@ -1,6 +1,5 @@
 package com.example.feel.ui.addFeeling
 
-import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.graphics.Color
 import android.os.Bundle
