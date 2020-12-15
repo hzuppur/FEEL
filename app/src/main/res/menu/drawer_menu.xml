@@ -3,8 +3,8 @@
 
     <item
         android:id="@id/homeFragment"
-        android:title="Home" />
+        android:title="Kodu" />
     <item
         android:id="@id/listFragment"
-        android:title="My Feelings" />
+        android:title="Minu tunded" />
 </menu>
